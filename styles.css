@@ -52,7 +52,7 @@ main {
 
 h1 {
     background-color: var(--Yellow);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
     width: fit-content;
     padding: .5rem 1rem;
@@ -62,13 +62,13 @@ h1 {
 
 p {
     margin: 2rem 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .grey {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: hsl(0, 0%, 50%);
-    margin: 2rem 3rem 0 0;
+    margin: 1rem 0rem 0 0;
     line-height: 2.4rem;
 }
 
@@ -77,7 +77,7 @@ a {
     text-decoration: none;
     color: hsl(0, 0%, 7%);
     font-weight: 800;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 a:hover {
@@ -117,4 +117,21 @@ a:hover {
         overflow: hidden;
     }
 
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    };
+
+    a {
+        font-size: 2.4rem;
+    }
+
+    .grey {
+        font-size: 1.5rem;
+        margin: 2rem 3rem 0 0;
+
+    }
 }
