@@ -5,13 +5,19 @@
     font-family: 'Figtree', sans-serif;
 }
 
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
 html {
     font-size: 62.5%;
 }
-/* @media (max-width: 375px) { */
 
 body {
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--Yellow);
     font-size: 1.6rem;
 }
 
@@ -22,12 +28,12 @@ main {
 }
 
 .container {
-    background-color: hsl(0, 0%, 100%);
-    width: 80%;
+    background-color: var(--White);
+    width: 325px;
     margin: auto;
     border-radius: 5%;
-    border: 1px solid hsl(0, 0%, 7%);
-    box-shadow: 10px 10px hsl(0, 0%, 7%);
+    border: 1px solid var(--Black);
+    box-shadow: 10px 10px var(--Black);
     display: grid;
     align-items: center;
     padding: 2rem;
@@ -35,19 +41,18 @@ main {
 
 #img-container {
     width: 100%;
+    height: 200px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
+    background: url(/images/illustration-article.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#art-image {
-    width: 280px;
-    position: relative;
-    left: -20px;
-}
 
 h1 {
-    background-color: hsl(47, 88%, 63%);
-    font-size: 70%;
+    background-color: var(--Yellow);
+    font-size: 1.5rem;
     font-weight: 800;
     width: fit-content;
     padding: .5rem 1rem;
@@ -57,12 +62,14 @@ h1 {
 
 p {
     margin: 2rem 0;
-    font-size: 65%;
+    font-size: 1.4rem;
 }
 
 .grey {
-    font-size: 76%;
+    font-size: 1.5rem;
     color: hsl(0, 0%, 50%);
+    margin: 2rem 3rem 0 0;
+    line-height: 2.4rem;
 }
 
 
@@ -70,26 +77,24 @@ a {
     text-decoration: none;
     color: hsl(0, 0%, 7%);
     font-weight: 800;
-    font-size: 110%;
+    font-size: 2.4rem;
 }
 
 a:hover {
-    color: hsl(47, 88%, 63%);
+    color: var(--Yellow);
     cursor: pointer;
 
 }
-
-
 
 #author {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: -10px;
+    margin: .3rem 0 -1rem .2rem;
 }
 
 .profile-pic {
-    width: 15%;
+    width: 30px;
 }
 
 #author-name {
@@ -98,23 +103,18 @@ a:hover {
     font-weight: 800;
 }
 
-/* } */
 
-@media (min-width: 375px) {
+
+@media (min-width: 400px) {
     
     .container {
-        width:  320px;
+        width:  380px;
     }
     
     #img-container {
-        width: 280px;
-       
-    }
-
-    #art-image {
-        width: 280px;
-        position: relative;
-        left: 0px;
+        width: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
     }
 
 }
